@@ -641,7 +641,7 @@ input {
   padding: 6px 16px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: var(--radius-full);
-  border: 1px solid rgba(232, 0, 29, 0.05);
+  border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 4px 10px rgba(0,0,0,0.02);
   transition: all var(--transition-base);
 }
@@ -669,15 +669,13 @@ input {
 
 .hero-product-card {
   position: relative;
-  width: 290px;
-  height: 380px;
+  width: 360px;
+  height: 480px;
   border-radius: var(--radius-2xl);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.15) 100%);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 30px 60px rgba(232, 0, 29, 0.08), 
-              inset 0 0 20px rgba(255, 255, 255, 0.2);
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 30px 60px rgba(232, 0, 29, 0.06), 
+              0 15px 30px rgba(0, 0, 0, 0.03);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -687,15 +685,15 @@ input {
 
 .product-card-glow {
   position: absolute;
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   background: radial-gradient(circle, rgba(232, 0, 29, 0.2) 0%, transparent 70%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   pointer-events: none;
-  filter: blur(16px);
+  filter: blur(20px);
 }
 
 @keyframes floatCard {
@@ -811,8 +809,8 @@ input {
   }
 
   .hero-product-card {
-    width: 220px;
-    height: 280px;
+    width: 290px;
+    height: 380px;
   }
 }
 
