@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
+  <!-- Grid overlay and decorative glow blobs for premium backdrop -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="glow-blob glow-blob-1" aria-hidden="true"></div>
+  <div class="glow-blob glow-blob-2" aria-hidden="true"></div>
+  <div class="glow-blob glow-blob-3" aria-hidden="true"></div>
 
   <!-- ═══════════════════════════════════════════
        NAVBAR
@@ -34,6 +39,7 @@
       </button>
 
       <ul class="nav-menu" id="navMenu">
+        <li><a href="#product-showcase" class="nav-link">Sản phẩm</a></li>
         <li><a href="#how-it-works" class="nav-link">Cách tham gia</a></li>
         <li><a href="#create-video" class="nav-link">Tạo video</a></li>
         <li><a href="#qr-upload" class="nav-link">QR Upload</a></li>
@@ -113,6 +119,76 @@
     </div>
     <div class="hero-scroll-indicator">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRODUCT SHOWCASE — SỨC KHỎE TỪ BETAGEN
+  ═══════════════════════════════════════════ -->
+  <section class="section product-showcase" id="product-showcase">
+    <div class="container">
+      <div class="showcase-grid">
+        <!-- Left: Image with floating badges -->
+        <div class="showcase-visual reveal">
+          <div class="showcase-image-wrapper">
+            <img
+              src="image/sua-chua-uong-betagen-tot-khong-bau-co-uong-duoc1-845x500-3.jpg"
+              alt="Sữa chua uống Betagen tốt cho sức khỏe"
+              class="showcase-img"
+            />
+            <!-- Floating tag badges -->
+            <div class="showcase-tag-badge badge-top-left animate-bounce-slow">
+              <span class="badge-icon">🧬</span>
+              <span class="badge-text">Lợi khuẩn Lactobacillus</span>
+            </div>
+            <div class="showcase-tag-badge badge-bottom-right animate-bounce-slow" style="animation-delay: 1.5s;">
+              <span class="badge-icon">🥛</span>
+              <span class="badge-text">Tốt cho hệ tiêu hóa</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Text details -->
+        <div class="showcase-content reveal">
+          <span class="section-tag">Dinh dưỡng</span>
+          <h2 class="showcase-title">Sức khỏe mỗi ngày cùng <span class="highlight-red">Betagen</span></h2>
+          <p class="showcase-desc">
+            Sữa uống lên men Betagen bổ sung hàng tỷ lợi khuẩn Lactobacillus Casei nhập khẩu chất lượng cao, giúp cân bằng hệ vi sinh đường ruột, hỗ trợ tiêu hóa khỏe mạnh và tăng cường sức đề kháng cho cả gia đình.
+          </p>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="benefit-text">
+                <strong>Thích hợp cho cả mẹ bầu:</strong> Hỗ trợ hệ tiêu hóa nhẹ nhàng, giảm đầy hơi hiệu quả trong suốt thai kỳ.
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="benefit-text">
+                <strong>Hàng tỷ lợi khuẩn Casei:</strong> Sống sót vượt qua axit dạ dày để bảo vệ đường ruột tối ưu.
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="benefit-text">
+                <strong>Hương vị thơm ngon tự nhiên:</strong> Dễ uống, kích thích vị giác cho cả trẻ nhỏ và người lớn tuổi.
+              </div>
+            </div>
+          </div>
+          <div class="showcase-actions">
+            <a href="#create-video" class="btn-primary btn-shimmer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              Tạo video cùng Betagen
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -304,6 +380,7 @@
       <div class="qr-card reveal">
         <div class="qr-wrapper">
           <div class="phone-mockup">
+            <div class="phone-notch"></div>
             <div class="phone-speaker"></div>
             <div class="phone-screen">
               <!-- [PLACEHOLDER] Thay bằng ảnh QR thật: /images/qr-placeholder.png -->
