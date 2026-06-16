@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
@@ -39,7 +39,7 @@
         <li><a href="#qr-upload" class="nav-link">QR Upload</a></li>
         <li><a href="#notes" class="nav-link">Lưu ý</a></li>
         <li>
-          <a href="#create-video" class="nav-cta-btn">
+          <a href="#create-video" class="nav-cta-btn btn-shimmer">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
             Tải ảnh lên
           </a>
@@ -74,7 +74,7 @@
           Tải ảnh của bạn lên và nhận ngay video cá nhân hóa cùng dàn KOL Betagen. Chỉ 3 bước đơn giản!
         </p>
         <div class="hero-actions reveal">
-          <a href="#create-video" class="btn-primary">
+          <a href="#create-video" class="btn-primary btn-shimmer">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
             Tải ảnh lên ngay
           </a>
@@ -303,48 +303,54 @@
       </div>
       <div class="qr-card reveal">
         <div class="qr-wrapper">
-          <!-- [PLACEHOLDER] Thay bằng ảnh QR thật: /images/qr-placeholder.png -->
-          <div class="qr-placeholder" id="qrPlaceholder">
-            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
-              <!-- Simulated QR pattern -->
-              <rect x="10" y="10" width="30" height="30" fill="none" stroke="#E8001D" stroke-width="2"/>
-              <rect x="15" y="15" width="20" height="20" fill="#E8001D" opacity="0.2"/>
-              <rect x="80" y="10" width="30" height="30" fill="none" stroke="#E8001D" stroke-width="2"/>
-              <rect x="85" y="15" width="20" height="20" fill="#E8001D" opacity="0.2"/>
-              <rect x="10" y="80" width="30" height="30" fill="none" stroke="#E8001D" stroke-width="2"/>
-              <rect x="15" y="85" width="20" height="20" fill="#E8001D" opacity="0.2"/>
-              <!-- QR dots -->
-              <rect x="50" y="10" width="6" height="6" fill="#E8001D" opacity="0.6"/>
-              <rect x="60" y="10" width="6" height="6" fill="#E8001D" opacity="0.4"/>
-              <rect x="50" y="20" width="6" height="6" fill="#E8001D" opacity="0.5"/>
-              <rect x="60" y="30" width="6" height="6" fill="#E8001D" opacity="0.7"/>
-              <rect x="50" y="50" width="6" height="6" fill="#E8001D" opacity="0.4"/>
-              <rect x="70" y="50" width="6" height="6" fill="#E8001D" opacity="0.6"/>
-              <rect x="80" y="50" width="6" height="6" fill="#E8001D" opacity="0.3"/>
-              <rect x="10" y="50" width="6" height="6" fill="#E8001D" opacity="0.5"/>
-              <rect x="30" y="50" width="6" height="6" fill="#E8001D" opacity="0.7"/>
-              <rect x="10" y="60" width="6" height="6" fill="#E8001D" opacity="0.4"/>
-              <rect x="30" y="60" width="6" height="6" fill="#E8001D" opacity="0.6"/>
-              <rect x="50" y="60" width="6" height="6" fill="#E8001D" opacity="0.5"/>
-              <rect x="70" y="60" width="6" height="6" fill="#E8001D" opacity="0.3"/>
-              <rect x="80" y="60" width="6" height="6" fill="#E8001D" opacity="0.7"/>
-              <rect x="50" y="70" width="6" height="6" fill="#E8001D" opacity="0.6"/>
-              <rect x="60" y="80" width="6" height="6" fill="#E8001D" opacity="0.4"/>
-              <rect x="70" y="80" width="6" height="6" fill="#E8001D" opacity="0.5"/>
-              <rect x="50" y="80" width="6" height="6" fill="#E8001D" opacity="0.7"/>
-              <rect x="80" y="80" width="6" height="6" fill="#E8001D" opacity="0.3"/>
-              <rect x="80" y="90" width="6" height="6" fill="#E8001D" opacity="0.6"/>
-              <rect x="60" y="90" width="6" height="6" fill="#E8001D" opacity="0.5"/>
-              <rect x="50" y="90" width="6" height="6" fill="#E8001D" opacity="0.4"/>
-              <rect x="80" y="70" width="6" height="6" fill="#E8001D" opacity="0.7"/>
-              <rect x="60" y="70" width="6" height="6" fill="#E8001D" opacity="0.3"/>
-              <text x="60" y="57" text-anchor="middle" fill="#E8001D" font-size="7" font-weight="600" opacity="0.8">QR CODE</text>
-            </svg>
-            <span class="qr-placeholder-label">(/images/qr-placeholder.png)</span>
+          <div class="phone-mockup">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen">
+              <!-- [PLACEHOLDER] Thay bằng ảnh QR thật: /images/qr-placeholder.png -->
+              <div class="qr-placeholder" id="qrPlaceholder">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                  <!-- Simulated QR pattern -->
+                  <rect x="10" y="10" width="30" height="30" fill="none" stroke="#E8001D" stroke-width="2"/>
+                  <rect x="15" y="15" width="20" height="20" fill="#E8001D" opacity="0.2"/>
+                  <rect x="80" y="10" width="30" height="30" fill="none" stroke="#E8001D" stroke-width="2"/>
+                  <rect x="85" y="15" width="20" height="20" fill="#E8001D" opacity="0.2"/>
+                  <rect x="10" y="80" width="30" height="30" fill="none" stroke="#E8001D" stroke-width="2"/>
+                  <rect x="15" y="85" width="20" height="20" fill="#E8001D" opacity="0.2"/>
+                  <!-- QR dots -->
+                  <rect x="50" y="10" width="6" height="6" fill="#E8001D" opacity="0.6"/>
+                  <rect x="60" y="10" width="6" height="6" fill="#E8001D" opacity="0.4"/>
+                  <rect x="50" y="20" width="6" height="6" fill="#E8001D" opacity="0.5"/>
+                  <rect x="60" y="30" width="6" height="6" fill="#E8001D" opacity="0.7"/>
+                  <rect x="50" y="50" width="6" height="6" fill="#E8001D" opacity="0.4"/>
+                  <rect x="70" y="50" width="6" height="6" fill="#E8001D" opacity="0.6"/>
+                  <rect x="80" y="50" width="6" height="6" fill="#E8001D" opacity="0.3"/>
+                  <rect x="10" y="50" width="6" height="6" fill="#E8001D" opacity="0.5"/>
+                  <rect x="30" y="50" width="6" height="6" fill="#E8001D" opacity="0.7"/>
+                  <rect x="10" y="60" width="6" height="6" fill="#E8001D" opacity="0.4"/>
+                  <rect x="30" y="60" width="6" height="6" fill="#E8001D" opacity="0.6"/>
+                  <rect x="50" y="60" width="6" height="6" fill="#E8001D" opacity="0.5"/>
+                  <rect x="70" y="60" width="6" height="6" fill="#E8001D" opacity="0.3"/>
+                  <rect x="80" y="60" width="6" height="6" fill="#E8001D" opacity="0.7"/>
+                  <rect x="50" y="70" width="6" height="6" fill="#E8001D" opacity="0.6"/>
+                  <rect x="60" y="80" width="6" height="6" fill="#E8001D" opacity="0.4"/>
+                  <rect x="70" y="80" width="6" height="6" fill="#E8001D" opacity="0.5"/>
+                  <rect x="50" y="80" width="6" height="6" fill="#E8001D" opacity="0.7"/>
+                  <rect x="80" y="80" width="6" height="6" fill="#E8001D" opacity="0.3"/>
+                  <rect x="80" y="90" width="6" height="6" fill="#E8001D" opacity="0.6"/>
+                  <rect x="60" y="90" width="6" height="6" fill="#E8001D" opacity="0.5"/>
+                  <rect x="50" y="90" width="6" height="6" fill="#E8001D" opacity="0.4"/>
+                  <rect x="80" y="70" width="6" height="6" fill="#E8001D" opacity="0.7"/>
+                  <rect x="60" y="70" width="6" height="6" fill="#E8001D" opacity="0.3"/>
+                  <text x="60" y="57" text-anchor="middle" fill="#E8001D" font-size="7" font-weight="600" opacity="0.8">QR CODE</text>
+                </svg>
+                <span class="qr-placeholder-label">(/images/qr-placeholder.png)</span>
+              </div>
+              <!-- [UNCOMMENT KHI CÓ QR THẬT]
+              <img src="images/qr-placeholder.png" alt="Mã QR tải ảnh" class="qr-image" />
+              -->
+            </div>
+            <div class="phone-home"></div>
           </div>
-          <!-- [UNCOMMENT KHI CÓ QR THẬT]
-          <img src="images/qr-placeholder.png" alt="Mã QR tải ảnh" class="qr-image" />
-          -->
         </div>
         <div class="qr-info">
           <h3 class="qr-title">Quét mã QR để tải ảnh từ điện thoại</h3>
